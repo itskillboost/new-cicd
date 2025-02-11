@@ -10,5 +10,7 @@ jobs:
     steps:
       - name: Print working directory
         run: pwd
-      - name: Change Directory
-        run: cd ~
+      - name: Change Directory and List files
+        run: |
+          cd ~
+          ls -al
