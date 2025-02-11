@@ -6,7 +6,7 @@ jobs:
     steps:
       - run: echo 'Hello, Github Actions'
   pwd-ls:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
     steps:
       - name: Print working directory
         run: pwd
