@@ -7,4 +7,4 @@ jobs:
       - run: ls -al
       - uses: actions/checkout@v3 # actions:owner, checkout:repository
       - run: ls -al
-      - run: cat new-cicd/.github/workflows/checkout.yaml
+      - run: cat .github/workflows/checkout.yaml
