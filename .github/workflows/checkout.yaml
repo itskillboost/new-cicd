@@ -7,6 +7,5 @@ jobs:
       - run: ls -al
       - uses: actions/checkout@v3 # actions:owner, checkout:repository
         with:
-          path: source # source 디렉터리 하위에 git 사용
-      - run: ls -al source
-      - run: cat source/.github/workflows/checkout.yaml
+          fetch-depth: 3
+
