@@ -1,0 +1,22 @@
+name: Run Tests  # 워크플로 이름
+
+on: [push]  # 코드가 push될 때 실행
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # 실행 환경
+
+    steps:
+      - name: Checkout Repository  # 코드 가져오기
+        uses: actions/checkout@v4  
+
+      - name: Setup Node.js  # Node.js 환경 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies  # 패키지 설치
+        run: npm install  
+
+      - name: Run tests  # 테스트 실행
+        run: npm test  
