@@ -16,7 +16,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install  # package.json이 있는지 확인 후 실행
+        run: npm install
 
       - name: Run tests
         run: npm test
